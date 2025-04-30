@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/Registration.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yourspecifichashhere" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXabObxzySZo5IgW+XZfL0zDz93w5iFUp8n0Lz6HfLWxA2v+hQ8t1tnFuT9r0AC+gD7u9f1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 <body>
@@ -67,85 +67,130 @@
     </div>
   </nav>
 
-  <h1 class="text-center my-4">Registration Form</h1>
-<form class="container registration-form" style="max-width: 600px;">
+  <div class="container mt-5 mb-5" data-aos="fade-up" data-aos-duration="1000">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-10">
+        <div class="card shadow-lg border-0 rounded-4" style="max-width: 800px; margin: auto;">
+          <div class="card-body p-4">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-10">
+        <div class="card shadow-lg border-0 rounded-4" style="max-width: 800px; margin: auto;">
+          <div class="card-body p-4">
+            <h3 class="card-title text-center mb-4">Registration for E-Jewelleries</h3>
   
-  <!-- First Name -->
-  <div class="input-group mb-3">
-    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
-    <input type="text" id="first-name" name="first-name" class="form-control" placeholder="First Name" required>
+            <form class="needs-validation" novalidate>
+              <!-- First Name -->
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                <input type="text" class="form-control" id="first-name" required placeholder="First Name">
+                <div class="invalid-feedback">First name is required.</div>
+              </div>
+  
+              <!-- Last Name -->
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                <input type="text" class="form-control" id="last-name" required placeholder="Last Name">
+                <div class="invalid-feedback">Last name is required.</div>
+              </div>
+  
+              <!-- Email -->
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" class="form-control" id="email" required placeholder="Email">
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+  
+              <!-- Phone -->
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+                <input type="tel" class="form-control" id="phone" required placeholder="Phone Number">
+                <div class="invalid-feedback">Phone number is required.</div>
+              </div>
+  
+              <!-- Username -->
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-user-circle"></i></span>
+                <input type="text" class="form-control" id="username" required placeholder="Username">
+                <div class="invalid-feedback">Username is required.</div>
+              </div>
+  
+              <!-- Password -->
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" class="form-control" id="password" required placeholder="Password">
+                <div class="invalid-feedback">Password is required.</div>
+              </div>
+  
+              <!-- Confirm Password -->
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" class="form-control" id="confirm-password" required placeholder="Confirm Password">
+                <div class="invalid-feedback">Please confirm your password.</div>
+              </div>
+  
+              <!-- City -->
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-city"></i></span>
+                <input type="text" class="form-control" id="city" required placeholder="City">
+                <div class="invalid-feedback">City is required.</div>
+              </div>
+  
+              <!-- State -->
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-flag"></i></span>
+                <input type="text" class="form-control" id="state" required placeholder="State">
+                <div class="invalid-feedback">State is required.</div>
+              </div>
+  
+              <!-- Address -->
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
+                <input type="text" class="form-control" id="address" required placeholder="Address">
+                <div class="invalid-feedback">Address is required.</div>
+              </div>
+  
+              <!-- Zip Code -->
+              <div class="input-group mb-4">
+                <span class="input-group-text"><i class="fa-solid fa-envelope-open-text"></i></span>
+                <input type="text" class="form-control" id="zip" required placeholder="Zip Code">
+                <div class="invalid-feedback">Zip code is required.</div>
+              </div>
+  
+              <!-- Submit -->
+              <div class="submit-button text-center">
+                <button type="reset" class="btn btn-secondary px-4 me-2">Reset</button>
+                
+                <button type="submit" class="btn btn-warning px-4">Register</button>
+              </div>
+              <div class="text-center mt-3">
+                <p>Already registered? <a href="login.html" class="text-primary">Login here</a></p>
+              </div>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <!-- Last Name -->
-  <div class="input-group mb-3">
-    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
-    <input type="text" id="last-name" name="last-name" class="form-control" placeholder="Last Name" required>
-  </div>
-
-  <!-- Email -->
-  <div class="input-group mb-3">
-    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
-    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
-  </div>
-
-  <!-- Phone Number -->
-  <div class="input-group mb-3">
-    <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
-    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number" required>
-  </div>
-
-  <!-- Username -->
-  <div class="input-group mb-3">
-    <span class="input-group-text"><i class="fa-solid fa-user-circle"></i></span>
-    <input type="text" id="username" name="username" class="form-control" placeholder="Username" required>
-  </div>
-
-  <!-- DOB -->
- 
-
-  <!-- Password -->
-  <div class="input-group mb-3">
-    <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
-    <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
-  </div>
-
-  <!-- Confirm Password -->
-  <div class="input-group mb-3">
-    <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
-    <input type="password" id="confirm-password" name="confirm-password" class="form-control" placeholder="Confirm Password" required>
-  </div>
-
-  <!-- City -->
-  <div class="input-group mb-3">
-    <span class="input-group-text"><i class="fa-solid fa-city"></i></span>
-    <input type="text" id="city" name="city" class="form-control" placeholder="City" required>
-  </div>
-
-  <!-- State -->
-  <div class="input-group mb-3">
-    <span class="input-group-text"><i class="fa-solid fa-flag"></i></span>
-    <input type="text" id="state" name="state" class="form-control" placeholder="State" required>
-  </div>
-
-  <!-- Address -->
-  <div class="input-group mb-3">
-    <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
-    <input type="text" id="address" name="address" class="form-control" placeholder="Address" required>
-  </div>
-
-  <!-- Zip Code -->
-  <div class="input-group mb-4">
-    <span class="input-group-text"><i class="fa-solid fa-envelope-open-text"></i></span>
-    <input type="text" id="zip" name="zip" class="form-control" placeholder="Zip Code" required>
-  </div>
-
-  <!-- Submit -->
-  <div class="text-center">
-    <input type="submit" class="btn btn-primary px-4" value="Register">
-  </div>
-
-</form>
-
+  
+  <!-- Bootstrap validation script -->
+  <script>
+    (() => {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+  
+  
       
       
 
